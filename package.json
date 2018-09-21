@@ -1,0 +1,41 @@
+{
+  "name": "i18nc-ast",
+  "version": "1.0.0",
+  "description": "I18N AST Tool for JS files",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "npm ls",
+    "lint": "eslint .",
+    "test": "cross-env DEBUG=i18nc-ast* mocha test/test_*/test_*",
+    "test-cov": "istanbul cover _mocha -- test/test_*/test_* --reporter dot",
+    "test-travis": "istanbul cover _mocha --report lcovonly -- test/test_*/test_* --reporter dot"
+  },
+  "dependencies": {
+    "debug": "^4.0.1",
+    "escodegen": "^1.11.0",
+    "esprima": "^4.0.1"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "eslint": "^5.6.0",
+    "eslint-config-brcjs": "^0.2.0",
+    "expect.js": "^0.3.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Bacra/node-i18nc-ast.git"
+  },
+  "keywords": [
+    "i18n",
+    "translate",
+    "ast"
+  ],
+  "author": "Bacra Woo<bacra.woo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bacra/node-i18nc-ast/issues"
+  },
+  "homepage": "https://github.com/Bacra/node-i18nc-ast"
+}
