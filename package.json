@@ -1,23 +1,23 @@
 {
   "name": "i18nc-ast",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "I18N AST Tool for JS files",
   "main": "index.js",
   "scripts": {
     "prepublish": "npm ls",
     "lint": "eslint .",
-    "test": "cross-env DEBUG=i18nc-ast* mocha test/test_*/test_*",
-    "test-cov": "istanbul cover _mocha -- test/test_*/test_* --reporter dot",
-    "test-travis": "istanbul cover _mocha --report lcovonly -- test/test_*/test_* --reporter dot"
+    "test": "cross-env DEBUG=i18nc-ast* mocha test/test_*",
+    "test-cov": "istanbul cover _mocha -- test/test_* --reporter dot",
+    "test-travis": "istanbul cover _mocha --report lcovonly -- test/test_* --reporter dot"
   },
   "dependencies": {
-    "debug": "^4.0.1",
+    "debug": "^4.1.0",
     "escodegen": "^1.11.0",
     "esprima": "^4.0.1"
   },
   "devDependencies": {
     "cross-env": "^5.2.0",
-    "eslint": "^5.6.0",
+    "eslint": "^5.8.0",
     "eslint-config-brcjs": "^0.2.0",
     "expect.js": "^0.3.1",
     "istanbul": "^0.4.5",
@@ -29,7 +29,7 @@
   },
   "keywords": [
     "i18n",
-    "translate",
+    "i18nc",
     "ast"
   ],
   "author": "Bacra Woo<bacra.woo@gmail.com>",
