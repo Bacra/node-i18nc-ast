@@ -1,3 +1,9 @@
+karam.conf.js
+
+Gruntfile.js
+gulpfile.js
+webpack.conf.js
+
 .*
 
 test
